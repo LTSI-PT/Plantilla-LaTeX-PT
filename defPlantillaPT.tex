@@ -1,0 +1,147 @@
+%%Paquetes
+\usepackage[T1]{fontenc} % Codificación de fuente
+\usepackage{lmodern} % Fuente compatible
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage[table]{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% requiere texlive-science
+%\usepackage{algorithm2e}
+%\usepackage[ruled,vlined,spanish]{algorithm2e}
+%\usepackage{alghorithmic}
+%\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+% colores en tablas
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage[table]{xcolor}
+% ligas en el índice
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=naranjauam3,
+    %urlcolor=blue, %el color mas usado para ligas
+    urlcolor=naranjauam2,
+    linktoc=all,
+    %linkbordercolor = {white}, % es el color más usado
+    citecolor=naranjauam
+}
+%
+%%% Definiciones
+%
+% color naranja institucional UAM-C
+\definecolor{naranjauam}{HTML}{F08200}
+% variaciones del naranja institucional
+\definecolor{naranjauam2}{HTML}{FF4000}
+\definecolor{naranjauam3}{HTML}{B43104}
+\gdef \LogoUAMC{%
+{\includegraphics[width=0.5\textwidth]{Plantilla/logoVar7Cua.png}\par}
+}
+\gdef \logosDTIDCCD{%
+    {\includegraphics[width=0.25\textwidth,height=1.2cm]{Plantilla/logoCCD.png}}
+    \hspace{0.15\textwidth}
+    {\includegraphics[width=0.25\textwidth]{Plantilla/tsi_horizontal.png}}
+    \hspace{0.15\textwidth}
+    {\includegraphics[width=0.1\textwidth]{Plantilla/logoDTI.png}\par}
+    
+}
+\gdef \asesor{\small{Asesora: Nombre completo}}
+\gdef \correo#1{\texttt{#1@cua.uam.mx}}
+\gdef \LTSI{%
+    {\scshape\small{LIC. EN TECNOLOGÍAS Y SISTEMAS DE INFORMACIÓN \par}}%
+}
+\gdef \DTI{%
+    {\scshape DEPARTAMENTO DE TECNOLOGÍAS DE LA INFORMACIÓN \par}
+}
+\gdef \dti{%
+    {\scshape Departamento de Tecnologías de la Información}
+}
+\gdef \dccd{%
+    {\scshape División de Ciencias de la Comunicación y Diseño}
+}
+\gdef \autor#1#2{%
+    \vfill
+%{\Large Autor: \par}
+    {\Large #1 \par}
+    {\correo{#2}}
+    \vfill
+    {\asesor}
+    \vfill
+}
+\gdef \tituloPTUno#1{%
+    {\scshape\Huge #1 \par}
+    \vspace{2cm}
+    {\itshape\Large Proyecto Terminal \par}
+ }%
+ \gdef \tituloPTDos#1{%
+    {\scshape\Huge #1 \par}
+    \vspace{
+    2.5cm}
+    {\itshape\Large Informe PT2 \par}
+ }%
+ \gdef \tituloPTTres#1{%
+    {\scshape\Huge #1 \par}
+    \vspace{1.5cm}
+    {\itshape\Large Proyecto Terminal \par}
+ }%
+ \gdef \carreraDepto{%
+ \DTI
+\vspace{1cm}
+\LTSI
+ }
+ 
+\renewcommand{\spanishabstractname}{Resumen}
+\renewcommand{\spanishcontentsname}{Índice}
+% Fechas en español
+\renewcommand{\today}{\ifnum\number\day<10 0\fi \number\day \space%
+\ifcase \month \or Enero\or Febrero\or Marzo\or Abril\or Mayo%
+\or Junio\or Julio\or Agosto\or Septiembre\or Octubre\or Noviembre\or Diciembre\fi, %
+\number \year}
+
+\newcommand{\hipotesis}[1]{%
+%\textbf{Hipótesis} \par
+\noindent
+{\color{naranjauam} \rule{\linewidth}{0.5mm}}
+%\fcolorbox{white}{yellow}{%
+\begin{quotation}
+{\textbf{#1}\par}%
+\end{quotation}
+%}
+\noindent
+{\color{naranjauam} \rule{\linewidth}{0.5mm}}
+}
+% Definiciones autonumeradas
+\newtheorem{definicion}{Def.}

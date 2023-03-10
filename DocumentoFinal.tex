@@ -1,0 +1,177 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[english, spanish, mexico]{babel}
+\selectlanguage{spanish}
+\usepackage[english]{isodate}
+
+
+%
+% Cargar el archivos de definiciones de la plantilla (debe estar en el mismo directorio
+%
+\include{defPlantillaPT} 
+\renewcommand{\lstlistingname}{Código}% Listing -> Código
+
+%%%%%% Inicio del documento
+\begin{document}
+% Apariencia de tablas
+%\rowcolors{1}{green!90!yellow!80}{green!70!yellow!40}
+\rowcolors{1}{naranjauam!90!yellow!80}{naranjauam!70!yellow!40}
+%
+% Portada
+ \begin{titlepage}
+\centering
+% Logotipo de la UAM-C
+\LogoUAMC
+\vspace{1cm}
+% Carrera y Depto
+\carreraDepto
+\vspace{2cm}
+% Título del PT
+\tituloPTUno{Título del proyecto}
+% Apellidos, Nombre y Matrícula
+\autor{Apellidos Nombre}{0123456789}
+% Fecha actual
+{\Large \printdate{2022-02-10} \par}
+\vspace{1.5cm}
+% Logotipos de unidad y depto
+\logosDTIDCCD
+\end{titlepage}
+
+% Resumen en español
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss blandit tellus at ipsum suscipit fringilla. Praesent placerat pretium lacus. Nunc blandit ultricies nisl, ut elementum augue pharetra at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed maximus ante enim, a feugiat tellus hendrerit non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur varius orci ut gravida volutpat. Ut mollis felis fermentum turpis sodales faucibus. Quisque nec magna et nisi vestibulum finibus nec in neque. Donec eu turpis non ex cursus iaculis.
+\end{abstract}
+
+%----- Si es necesario un resumen en otro idioma, si no lo es, puedes borrarlo.
+\selectlanguage{english}
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit tellus at ipsum suscipit fringilla. Praesent placerat pretium lacus. Nunc blandit ultricies nisl, ut elementum augue pharetra at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed maximus ante enim, a feugiat tellus hendrerit non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur varius orci ut gravida volutpat. Ut mollis felis fermentum turpis sodales faucibus. Quisque nec magna et nisi vestibulum finibus nec in neque. Donec eu turpis non ex cursus iaculis.
+
+\end{abstract}
+
+\selectlanguage{spanish}
+\newpage
+
+% Índice
+\tableofcontents
+\newpage
+
+%%% Contenido del documento
+\section{Introducción}\label{Introd}
+%----- Si no tienes subsecciones, utiliza este espacio para escribir tu introducción.
+\subsection{Subtitulo}
+%----- En esta subsección puedes escribir lo que quieras
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat et tortor hendrerit malesuada. Sed condimentum dictum arcu, vitae porta urna ultrices at. Nulla ac interdum lectus. Etiam vitae est in lorem suscipit vel ac nisi. Etiam iaculis porta nulla ut suscipit. Morbi efficitur pulvinar turpis, et convallis nulla lobortis a. Quisque ullamcorper quam sed eros congue, in consectetur enim vulputate. Duis pharetra sagittis odio et aliquet. Maecenas tincidunt ultricies accumsan. Aliquam sed lobortis tellus, at volutpat ex.
+
+Proin eleifend lectus eget mi gravida fermentum. Sed bibendum pellentesque ipsum id blandit. Ut sit amet tempus ante. Proin a pulvinar enim. In ultrices nisi vitae odio pellentesque, id consequat neque dignissim. Suspendisse malesuada ex justo, gravida volutpat ante porta in. Morbi id dui velit. In non orci orci.
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris condimentum volutpat metus nec sagittis. Aliquam vel ipsum sapien. Vestibulum ut felis id enim mattis aliquam. Nulla volutpat tincidunt risus, ac imperdiet ex dapibus a. Praesent mi nunc, sagittis quis dolor id, venenatis pharetra ex. Cras facilisis non enim sed consequat. Integer mollis sem nec sem ullamcorper, at facilisis eros tincidunt. Praesent tristique vitae felis placerat posuere. Nullam porttitor nunc sit amet mauris hendrerit pellentesque. Phasellus at varius massa, vitae tristique felis. Vestibulum id risus purus. Etiam aliquet dolor orci, at fringilla augue finibus et. Vestibulum nulla dui, elementum sed vulputate a, vestibulum quis mi.
+
+%----- Marco Teórico
+\section{Marco Teórico}\label{MarcoTeorico}
+
+\subsection{Agregar imágenes}
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris condimentum volutpat metus nec sagittis. Aliquam vel ipsum sapien. Vestibulum ut felis id enim mattis aliquam. Nulla volutpat tincidunt risus, ac imperdiet ex dapibus a. Praesent mi nunc, sagittis quis dolor id, venenatis pharetra ex. Cras facilisis non enim sed consequat. Integer mollis sem nec sem ullamcorper, at facilisis eros tincidunt. Praesent tristique vitae felis placerat posuere. Nullam porttitor nunc sit amet mauris hendrerit pellentesque. Phasellus at varius massa, vitae tristique felis. Vestibulum id risus purus. Etiam aliquet dolor orci, at fringilla augue finibus et. Vestibulum nulla dui, elementum sed vulputate a, vestibulum quis mi.
+
+
+La arquitectura general de los sistemas de recomendación puede observarse en la Figura \ref{Figura01}.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm, height=7.3cm]{Doc/Figuras/Fig01.jpg}
+\caption{Ejemplo de una imágen}
+\label{Figura01}
+\end{figure}
+ 
+\subsubsection{Como citar}
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris condimentum volutpat metus nec sagittis. Aliquam vel ipsum sapien.
+Vestibulum ut felis id enim mattis aliquam. Nulla volutpat tincidunt risus, ac imperdiet ex dapibus a. Praesent mi nunc, sagittis quis dolor id, venenatis pharetra ex. 
+Cras facilisis non enim sed consequat. Integer mollis sem nec sem ullamcorper, at facilisis eros tincidunt. Praesent tristique vitae felis placerat posuere. Nullam porttitor nunc sit amet mauris hendrerit pellentesque. 
+Phasellus at varius massa, vitae tristique felis. Vestibulum id risus purus. Etiam aliquet dolor orci, at fringilla augue finibus et. Vestibulum nulla dui, elementum sed vulputate a, vestibulum quis mi \cite{niklas_python-agentspeak_2017}.
+
+\subsection{Tablas}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{| p{3cm} | p{7cm} |}
+\hline
+	Nombre & Descripción \\ \hline
+	Elemento 01 & Vestibulum nulla dui, elementum sed vulputate a, vestibulum quis mi\\
+	Elemento 02 & Vestibulum nulla dui, elementum sed vulputate a, vestibulum quis mi \\
+	Elemento 03 & Vestibulum nulla dui, elementum sed vulputate a, vestibulum quis mi  \\ \hline
+\end{tabular}
+\caption{Ejemplo de una tabla}
+\label{table:Tabla}
+\end{center}
+\end{table}
+
+\subsection{Listas}
+Si quieres colocar elementos en forma de lista como: 
+\begin{itemize}
+ \item{Ejemplos}
+ \item{Distintos elementos}	
+ \item{Puntos importantes}
+\end{itemize}
+Puedes leer el código de {\LaTeX} para que veas cómo hacerlas. \\
+
+Existen tambien estas otras listas, las numeradas: 
+\begin{enumerate}
+	\item Primer elemento.
+	\item Segundo.
+	\item Ultimo.
+\end{enumerate}
+
+
+\section{Hipótesis}\label{Hipot}
+%
+\hipotesis{Vestibulum nulla dui, elementum sed vulputate a, vestibulum quis mi}
+
+\section{Metodología}\label{Metod}
+%
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit tellus at ipsum suscipit fringilla. Praesent placerat pretium lacus. Nunc blandit ultricies nisl, ut elementum augue pharetra at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed maximus ante enim, a feugiat tellus hendrerit non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur varius orci ut gravida volutpat. Ut mollis felis fermentum turpis sodales faucibus. Quisque nec magna et nisi vestibulum finibus nec in neque. Donec eu turpis non ex cursus iaculis. 
+
+\section{Código Fuente}
+Si deseas agregar el código fuente o secciones de este al documento lo puedes hacer de la siguiente manera: 
+\begin{lstlisting}[language=Python, caption=Código Python {\tt main.py},label={lst:main}]
+import numpy as np
+
+matrix1 = np.matrix('1 2 3; 4 5 6; 7 8 9')
+print (matrix1)
+
+\end{lstlisting} 
+
+\subsection{Manual de usuario}
+%----- Manual de usuario.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit tellus at ipsum suscipit fringilla. Praesent placerat pretium lacus. Nunc blandit ultricies nisl, ut elementum augue pharetra at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed maximus ante enim, a feugiat tellus hendrerit non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur varius orci ut gravida volutpat. Ut mollis felis fermentum turpis sodales faucibus. Quisque nec magna et nisi vestibulum finibus nec in neque. Donec eu turpis non ex cursus iaculis.
+
+\section{Conclusión y trabajo futuro}
+%----- Conclusión
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit tellus at ipsum suscipit fringilla. Praesent placerat pretium lacus. Nunc blandit ultricies nisl, ut elementum augue pharetra at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed maximus ante enim, a feugiat tellus hendrerit non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur varius orci ut gravida volutpat. Ut mollis felis fermentum turpis sodales faucibus. Quisque nec magna et nisi vestibulum finibus nec in neque. Donec eu turpis non ex cursus iaculis.
+
+\section{Disponibilidad del código} 
+%------ Repositorio del proyecto
+Para más información del proyecto: 
+\begin{itemize}
+	\item Sitio web: \href{http://lab-ltsi.cua.uam.mx}{http://lab-ltsi.cua.uam.mx}
+	\item Correo electrónico: \href{mailto:someone@cua.uam.mx}{0123456789@cua.uam.mx}
+\end{itemize}\ \
+
+\section{Publicaciones}
+%----- Lista de publicaciones
+\begin{itemize}
+	\item Información sobre la publicación, \emph{Conferencia}, 2023.
+\end{itemize}
+
+
+% Bibliografía
+%----- Referencias con el formato de la IEEE
+\bibliographystyle{ieeetr}
+% Definir, si se prefiere en archivo separado .bib
+\bibliography{Referencias.bib}
+% o definiendo cada referencia aquí mismo:
+%\begin{thebibliography}{}
+%\bibitem{} 
+%\end{thebibliography}
+%
+
+\end{document}
